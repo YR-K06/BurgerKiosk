@@ -63,7 +63,7 @@
             lblBurgerOrderKiosk.Location = new Point(162, 61);
             lblBurgerOrderKiosk.Name = "lblBurgerOrderKiosk";
             lblBurgerOrderKiosk.Size = new Size(666, 96);
-            lblBurgerOrderKiosk.TabIndex = 0;
+            lblBurgerOrderKiosk.TabIndex = 4;
             lblBurgerOrderKiosk.Text = "버거 주문 키오스크";
             // 
             // rdoHamBurger
@@ -111,7 +111,7 @@
             grpMenue.Location = new Point(23, 204);
             grpMenue.Name = "grpMenue";
             grpMenue.Size = new Size(451, 623);
-            grpMenue.TabIndex = 1;
+            grpMenue.TabIndex = 0;
             grpMenue.TabStop = false;
             grpMenue.Text = "메뉴선택";
             // 
@@ -199,7 +199,7 @@
             grpOption.Location = new Point(528, 220);
             grpOption.Name = "grpOption";
             grpOption.Size = new Size(300, 412);
-            grpOption.TabIndex = 2;
+            grpOption.TabIndex = 1;
             grpOption.TabStop = false;
             grpOption.Text = "추가옵션";
             // 
@@ -211,7 +211,7 @@
             grpOrder.Location = new Point(891, 204);
             grpOrder.Name = "grpOrder";
             grpOrder.Size = new Size(522, 457);
-            grpOrder.TabIndex = 3;
+            grpOrder.TabIndex = 2;
             grpOrder.TabStop = false;
             grpOrder.Text = "주문 내역";
             // 
@@ -234,24 +234,28 @@
             // 
             // btnOrder
             // 
+            btnOrder.BackColor = Color.Brown;
             btnOrder.Font = new Font("맑은 고딕", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnOrder.ForeColor = Color.White;
             btnOrder.Location = new Point(891, 693);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(258, 71);
-            btnOrder.TabIndex = 4;
+            btnOrder.TabIndex = 3;
             btnOrder.Text = "주문하기";
-            btnOrder.UseVisualStyleBackColor = true;
+            btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
             // 
             // btnReset
             // 
+            btnReset.BackColor = Color.Green;
             btnReset.Font = new Font("맑은 고딕", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnReset.ForeColor = Color.White;
             btnReset.Location = new Point(1155, 693);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(258, 71);
             btnReset.TabIndex = 5;
             btnReset.Text = "초기화";
-            btnReset.UseVisualStyleBackColor = true;
+            btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
             // 
             // lblErrorMsg
@@ -269,6 +273,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Linen;
             ClientSize = new Size(1492, 826);
             Controls.Add(lblErrorMsg);
             Controls.Add(btnReset);
