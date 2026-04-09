@@ -47,6 +47,7 @@
             lstOrder = new ListBox();
             btnOrder = new Button();
             btnReset = new Button();
+            lblErrorMsg = new Label();
             grpMenue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picChickenBurger).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBulgogiBurger).BeginInit();
@@ -253,11 +254,23 @@
             btnReset.UseVisualStyleBackColor = true;
             btnReset.Click += btnReset_Click;
             // 
+            // lblErrorMsg
+            // 
+            lblErrorMsg.AutoSize = true;
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Location = new Point(891, 664);
+            lblErrorMsg.Name = "lblErrorMsg";
+            lblErrorMsg.Size = new Size(180, 25);
+            lblErrorMsg.TabIndex = 6;
+            lblErrorMsg.Text = "메뉴를 선택해주세요";
+            lblErrorMsg.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1492, 826);
+            Controls.Add(lblErrorMsg);
             Controls.Add(btnReset);
             Controls.Add(btnOrder);
             Controls.Add(grpOrder);
@@ -299,5 +312,6 @@
         private ListBox lstOrder;
         private Button btnOrder;
         private Button btnReset;
+        private Label lblErrorMsg;
     }
 }
